@@ -1,0 +1,23 @@
+{
+  "name": "dropbox-force-dl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "NODENV=production webpack",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.202",
+    "copy-webpack-plugin": "^11.0.0",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.9.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "jspdf": "^2.5.1",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "version": "0.0.0",
+  "name": "Dropbox Force Download",
+  "description": "ダウンロード無効になっているDropboxのPDFをダウンロードする。",
+  "icons": {
+    "16": "dropbox.png",
+    "48": "dropbox.png",
+    "128": "dropbox.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "dropbox.png",
+      "48": "dropbox.png",
+      "128": "dropbox.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.dropbox.com/*"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "downloads"
+  ]
+}
